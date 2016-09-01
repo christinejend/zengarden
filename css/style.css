@@ -52,77 +52,88 @@ table {
 /* FIN RESET */
 
 
-
 body{
 	background: url(../img/paris.jpg)  no-repeat center fixed;
 	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
   	background-size: cover; /* version standardisée */;
 	background-repeat: no-repeat;
 	color: white;
-	font-size: 0.9em;
-	font-family: sans-serif;
+	font-size: 1em;
+	font-family: 'Poiret One', cursive;
 	width: 100%;
 	z-index: 3;
 
 }
 p{
-	line-height: 1.5;
-	padding: 0.5em;
+	line-height: 1.6;
+	font-size: 1.2em;
 }
 header h1, header h2{					/* Titre caché */
 	text-indent: -9000px;
 }
 
-.intro:not(header){
-	margin-top: -20px;
-}
-.summary{                        /* Bannière Rose */
-	background-color: #3F2224;
-	color: #D0939A;
-	font-size: 1.3em;
-	opacity: 0.86	;
+/*
+.summary, .preamble{                        
+	
 	padding: 20px 15px;
 	width: 35%;
 	margin-left: 25.5%;
-	border-radius: 30px;
-}
-.preamble p{  /* 1er Paragraphe */
-	background-color: #1B1612;
-	opacity: 0.65;
-	padding: 3px 5px;
-	width: 35%;
-	padding: 7px 15px;
-	margin: 0 390px;
 
+}*/
+ .intro, .main{
+	margin: 0 11%;
+	width: 46%;
+	background-color: rgba( 0, 0, 0, 0.6);
 }
-.main p, .participation p, .benefits p, .requirements p, .explanation p{  /*  Paragraphe */
+.intro p, .main p{
+	padding: 0.5em 11%;
+}
+.summary{
+	color:  #F8AFB7;	
+	text-align: center;
+	font-size: 1.3em;
+}
+.preamble h3{
+	padding-top: 3em;
+	padding-bottom: 1.5em;
+	margin: 0 7%;
+	font-size: 1em;
+}
+
+.main h3{
+	padding-top: 3.5em;
+	padding-bottom: 2em;
+	margin: 0 7%;
+	font-size: 1.5em;
+	font-family: 'Courgette', cursive;
+}
+.preamble h3, .summary p{
+	font-family: 'Courgette', cursive;
+	font-size: 1.5em;
+}
+.summary p{
+	font-family: 'Courgette', cursive;
+	font-size: 1em;
+	padding-top: 2em;
+}
+.requirements{
+	padding-bottom: 4em;
+}
+.requirements p{
+	padding: 0.7em 11%;
+}
+/*
+.preamble p, .main p, .participation p, .benefits p, .requirements p, .explanation p{  /*  Paragraphe 
 	background-color: #1B1612;
 	opacity: 0.71;
 	padding: 3px 5px;
 	width: 35%;
-	padding: 7px 15px;
 	margin: 0 390px;
 	font-size: 1.1em;
 	padding: 1.5%;
-}
-.design-selection nav{          /* Carré rose*/
-	background-color: #D0939A;
-	opacity: 0.9;
-	padding: 24px;
-	width: 14%;
-	border-radius: 63px;
-	position: absolute;
-	top: 245px;
-	right: 80px;
-	position: fixed;
-}
-.design-selection nav a:hover{
-	-webkit-transform: scale(2);
-	-moz-transform: scale(2);
-	-o-transform: scale(2);
-	transform: scale(2);
-}
-.preamble h3, .participation h3, .benefits h3, .requirements h3, .explanation h3{  /* TITRE*/
+}*/
+/*
+.preamble h3, .participation h3, .benefits h3, .requirements h3, .explanation h3{  /* TITRE
 	background-color: #1B1612;
 	opacity: 0.8;
 	border-radius: 10px;
@@ -131,17 +142,64 @@ header h1, header h2{					/* Titre caché */
 	font-size: 1.2em;	
 	padding: 10px 18px;
     margin: 21px 390px ;
-}
-aside{
-	background-color:#975b47;
-	opacity: 0.8;
+}*//*
+.design-selection nav{          /* Carré rose
+	background-color: #D0939A;
+	opacity: 0.9;
 	padding: 24px;
-	width: 10%;
+	width: 16%;
+	text-align: center;
 	border-radius: 63px;
-	position: absolute;
-	top: 211px;
-	left: 126px;
+	top: 36em;
+	right: 4%;
 	position: fixed;
+}*/
+aside{
+	font-size: 0.9em;
+}
+.design-selection, .zen-resources{				/* ARCHIVES RESSOURCES */
+	background-color: rgba(208,147,154, 0.8);
+	font-weight: bold;		
+}
+.wrapper li{
+	padding: 0.5em 0;
+}
+
+.design-selection{
+	position: fixed;
+	top: 40em;
+	right: 3%;
+	width: 17%;
+	padding: 1em 0 2em 2%;
+	border-radius: 63px;
+}
+.zen-resources, .design-archives{
+	border-radius: 63px;
+	padding-left: 1%;
+	padding-top: 1.5em
+}
+.zen-resources{
+	z-index: 1;
+	padding-bottom: 10em;
+	padding-left: 1.5%;
+	position: fixed;
+	top: 10em;
+	right: 7%;
+	width: 10%;
+}
+.design-archives{
+	position: fixed;
+	top: 22.5em;
+	right: 8%;
+	width: 9%;
+	z-index: 5;
+	font-weight: bold;
+	opacity: 0.8;
+
+}	
+.sidebar h3{
+	font-size: 1.2em;
+	padding: 1em 13%;
 }
 .wrapper{
 	margin-left: 11px;
@@ -150,36 +208,22 @@ a{
 	color: #160708;
 	text-decoration: none;
 }
-a:hover:before{
-	content: "| ";
-	font-size: 1.2em;
-	color: white;
-}
-.main a, .participation a, .benefits a, .requirements a, .explanation a{
+.intro a {
 	color: #FFCD93;
 }
-li{
-	padding: 0.3em;
+.main a {
+	color: #FFCD93;
 }
-footer a{
-	display: block;
-	padding: 20px;
-	margin: 5px 2px;
+.main a:hover{
+	font-weight: bold;
 }
-footer{                              /* BARRE NAV language + position */
-	background-color: #FFCD93;	
-	border-radius: 26px;
-	opacity: 0.5;
-	width: 56px;
-	height: 270px;
-	padding: 15px 5px;
-	position: absolute;
-	position: fixed;
-	top:28em;
-	left: 17px;
+.sidebar a:hover:before{
+	content: "| ";
+	margin-left: -4.6%;
+	color: white;
 }
-footer:hover{
-	opacity: 1;
+.design-selection nav a:hover{
+	margin-left: 0.4em;
 }
 footer a:hover{
 	-moz-transform:  scale(1.3);
@@ -188,29 +232,23 @@ footer a:hover{
 	-ms-transform:  scale(1.3);
 	 transform:  scale(1.3);	
 }
-.zen-validate-html{                                                       /* SPRITE FOOTER*/
-	background-image: url('../img/language.png');   /* SPRITE html */
-	background-position: 4px -121px;
-	background-size: 71px 224px;
-	width: 14px;
-	height: 6px;
-	text-indent: -1000px;
+
+li{
+	padding: 0.3em;
 }
-.zen-validate-css{
-	background-image: url('../img/language.png');    /* SPRITE css */
-	background-position: 151px 1px;
-	background-size: 50px 168px;
-	width: 14px;
-	height: 6px;
-	text-indent: -1000px;
+footer a{
+	display: block;
+	padding: 1.2em;
+	margin: 1.3em 1%;
 }
-.zen-license{
-	background-image: url('../img/language.png');   /* SPRITE CC */
-	background-position: 0px -51px;
-	background-size: 56px 205px;
-	width: 14px;
-	height: 13px;
-	text-indent: -1000px;
+footer{                              /* BARRE NAV language + position */
+	background-color: rgba(255,205,147,0.4);	
+	border-radius: 63px;
+	width: 4em;
+	padding: 1.5em 0.5%;
+	position: fixed;
+	top: 20em;
+	left: 3.5%;
 }
 footer .zen-accessibility{
 	width: 14px;
@@ -220,13 +258,117 @@ footer .zen-accessibility{
 footer .zen-accessibility a{
 	margin-right: 15px;
 }
+.zen-validate-html:hover, .zen-validate-css:hover, .zen-license:hover, .zen-github:hover{
+	opacity: 1;
+}
+.zen-validate-html{                                                       /* SPRITE FOOTER*/
+	background-image: url('../img/language.png');   /* SPRITE html */
+	background-position: 4px -121px;
+	background-size: 71px 224px;
+	width: 14px;
+	opacity: 0.5;
+	height: 6px;
+	text-indent: -1000px;
+}
+.zen-validate-css{
+	background-image: url('../img/language.png');    /* SPRITE css */
+	background-position: 151px 1px;
+	background-size: 50px 168px;
+	width: 14px;
+	height: 6px;
+	opacity: 0.5;
+	text-indent: -1000px;
+}
+.zen-license{
+	background-image: url('../img/language.png');   /* SPRITE CC */
+	background-position: 0px -51px;
+	background-size: 56px 205px;
+	width: 14px;
+	height: 13px;
+	opacity: 0.5;
+	text-indent: -1000px;
+}
 .zen-github{
+	opacity: 0.5;
 	background-image: url('../img/language.png');      /* SPRITE Github */
 	background-position: 2px 51px;
 	background-size: 52px 202px;
 	width: 14px;
 	height: 12px;
 	text-indent: -1000px;
-}                                                                   /* FIN SPRITE FOOTER*/
+}
+.zen-accessibility{
+	border: 2px solid grey;
+	border-radius: 50%;
+}
+                                                                   /* FIN SPRITE FOOTER*/
 
- 
+@media (max-width: 1200px) {
+  .intro, .main {
+    width: 60%;
+  }
+  footer{
+  	width: 3.5em;
+  	left: 2.5%;
+  }
+}
+@media (max-width: 1000px) {
+	.wrapper li{
+		display: inline-block;
+	}
+	.wrapper{
+		margin-left: 1.5%;
+		width: 69.7%;
+	}
+	.zen-resources,.design-selection{
+		margin-left: 6em;
+		padding: 0;
+
+		position: unset;
+		width: 86%;
+		border-radius: unset;
+	}
+	.design-archives{
+		top: 49.5em;
+		right: 52%;
+		width: 31%;
+	}
+	#design-selection ul{
+		margin-left: 10%;
+	}
+	.zen-resources a{
+		margin-right: 0.5em;
+	}
+	#zen-resources ul{
+		padding-bottom: 4em;
+		margin-left: 10%;
+	}
+	#design-selection ul li:after{
+		content: ' - ';
+	}
+	.sidebar a:hover:before{
+	content:none;
+	margin: 0;
+	}
+	.design-selection nav a:hover, .zen-resources a:hover{
+		margin: 0;
+		font-style: italic;
+	}
+
+}
+@media (max-width: 800px) {
+	
+	.intro, .main{
+		margin: 0 6em;
+		width: 85%;
+	}
+	.design-archives{
+		top: 59.5em;
+		right: 63%;
+	}
+	.wrapper{
+		width: 99%;
+	}
+
+
+}
