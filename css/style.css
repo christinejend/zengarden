@@ -82,7 +82,7 @@ header h1, header h2{					/* Titre caché */
 }*/
  .intro, .main{
 	margin: 0 11%;
-	width: 46%;
+	width: 45em;
 	background-color: rgba( 0, 0, 0, 0.6);
 }
 .intro p, .main p{
@@ -158,7 +158,7 @@ aside{
 	font-size: 0.9em;
 }
 .design-selection, .zen-resources{				/* ARCHIVES RESSOURCES */
-	background-color: rgba(208,147,154, 0.8);
+	background-color: rgba(208,147,154, 0.9);
 	font-weight: bold;		
 }
 .wrapper li{
@@ -167,9 +167,9 @@ aside{
 
 .design-selection{
 	position: fixed;
-	top: 40em;
-	right: 3%;
-	width: 17%;
+	top: 29em;
+	right: 2%;
+	width: 18.5em;
 	padding: 1em 0 2em 2%;
 	border-radius: 63px;
 }
@@ -178,31 +178,35 @@ aside{
 	padding-left: 1%;
 	padding-top: 1.5em
 }
+.intro a:hover {
+     padding-bottom: 0.1em;
+    border-bottom: 1px solid white;
+}
 .zen-resources{
 	z-index: 1;
 	padding-bottom: 10em;
 	padding-left: 1.5%;
 	position: fixed;
-	top: 10em;
+	top: 1em;
 	right: 7%;
-	width: 10%;
+	width: 9em;
 }
 .design-archives{
 	position: fixed;
-	top: 22.5em;
+	top: 15.5em;
 	right: 8%;
-	width: 9%;
+	width: 8em;
 	z-index: 5;
 	font-weight: bold;
-	opacity: 0.8;
+	opacity: 0.9;
 
 }	
 .sidebar h3{
 	font-size: 1.2em;
 	padding: 1em 13%;
 }
-.wrapper{
-	margin-left: 11px;
+.sidebar{
+	margin-left: 0%;
 }
 a{
 	color: #160708;
@@ -219,11 +223,13 @@ a{
 }
 .sidebar a:hover:before{
 	content: "| ";
-	margin-left: -4.6%;
+	font-weight: bolder;
 	color: white;
+	margin-left: -7%;
 }
+.design-name nav a:hover,
 .design-selection nav a:hover{
-	margin-left: 0.4em;
+	margin-left: 0.75em;
 }
 footer a:hover{
 	-moz-transform:  scale(1.3);
@@ -244,26 +250,23 @@ footer a{
 footer{                              /* BARRE NAV language + position */
 	background-color: rgba(255,205,147,0.4);	
 	border-radius: 63px;
-	width: 4em;
-	padding: 1.5em 0.5%;
+	width: 3.7em;
+	padding: 0.5em;
 	position: fixed;
-	top: 20em;
+	top: 10em;
 	left: 3.5%;
 }
 footer .zen-accessibility{
-	width: 14px;
-	height: 13px;
+	width: 8px;
+	height: 8px;
 	color: black;
 }
-footer .zen-accessibility a{
-	margin-right: 15px;
-}
-.zen-validate-html:hover, .zen-validate-css:hover, .zen-license:hover, .zen-github:hover{
+.zen-validate-html:hover, .zen-accessibility:hover, .zen-validate-css:hover, .zen-license:hover, .zen-github:hover{
 	opacity: 1;
 }
 .zen-validate-html{                                                       /* SPRITE FOOTER*/
 	background-image: url('../img/language.png');   /* SPRITE html */
-	background-position: 4px -121px;
+	background-position: 4px -123px;
 	background-size: 71px 224px;
 	width: 14px;
 	opacity: 0.5;
@@ -272,7 +275,7 @@ footer .zen-accessibility a{
 }
 .zen-validate-css{
 	background-image: url('../img/language.png');    /* SPRITE css */
-	background-position: 151px 1px;
+	background-position: 151px 0px;
 	background-size: 50px 168px;
 	width: 14px;
 	height: 6px;
@@ -298,8 +301,14 @@ footer .zen-accessibility a{
 	text-indent: -1000px;
 }
 .zen-accessibility{
-	border: 2px solid grey;
+	opacity: 0.5;
+	border: 3px solid black;
+	background-image: url('../img/acc.png');
+	background-repeat: no-repeat;
+	background-position: 9px 1px;
 	border-radius: 50%;
+	background-size: 34px;
+	text-indent: -1000px;
 }
                                                                    /* FIN SPRITE FOOTER*/
 
@@ -312,15 +321,18 @@ footer .zen-accessibility a{
   	left: 2.5%;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
+	.intro, .main {
+    width: 70%;
+  }
 	.wrapper li{
 		display: inline-block;
 	}
-	.wrapper{
-		margin-left: 1.5%;
-		width: 69.7%;
+	.sidebar{
+		margin-left: 1.6%;
+		width: 81.3%;
 	}
-	.zen-resources,.design-selection{
+	.zen-resources,.design-selection, .design-archives{
 		margin-left: 6em;
 		padding: 0;
 
@@ -329,15 +341,22 @@ footer .zen-accessibility a{
 		border-radius: unset;
 	}
 	.design-archives{
-		top: 49.5em;
-		right: 52%;
-		width: 31%;
+		background-color: rgba(208,147,154, 1);
+		font-weight: bold;
+
 	}
-	#design-selection ul{
+	.archives{
+		font-weight: bold;
+	}
+	.design h3{
+		padding: 0;
+	}
+	#design-selection ul, #design-archives nav{
 		margin-left: 10%;
+		width: 87%;
 	}
 	.zen-resources a{
-		margin-right: 0.5em;
+		padding-right: 0.5em;
 	}
 	#zen-resources ul{
 		padding-bottom: 4em;
@@ -350,7 +369,7 @@ footer .zen-accessibility a{
 	content:none;
 	margin: 0;
 	}
-	.design-selection nav a:hover, .zen-resources a:hover{
+	.design-selection nav a:hover, .zen-resources a:hover, nav ul li a:hover{
 		margin: 0;
 		font-style: italic;
 	}
@@ -362,13 +381,28 @@ footer .zen-accessibility a{
 		margin: 0 6em;
 		width: 85%;
 	}
+	#design-selection ul, #design-archives nav{
+		width: 70%;
+	}
 	.design-archives{
 		top: 59.5em;
 		right: 63%;
 	}
-	.wrapper{
-		width: 99%;
+	.sidebar{
+		width: 98%;
 	}
+
+
+}
+
+
+@media (max-width: 541px) {
+	#design-selection ul li:after {
+    content: "  ";
+    display: block;
+}
+	
+	
 
 
 }
