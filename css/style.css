@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -73,8 +73,8 @@ header h1, header h2{					/* Titre caché */
 }
 
 /*
-.summary, .preamble{                        
-	
+.summary, .preamble{
+
 	padding: 20px 15px;
 	width: 35%;
 	margin-left: 25.5%;
@@ -83,13 +83,13 @@ header h1, header h2{					/* Titre caché */
  .intro, .main{
 	margin: 0 11%;
 	width: 45em;
-	background-color: rgba( 0, 0, 0, 0.6);
+	background-color: rgba( 0, 0, 0, 0.7);
 }
 .intro p, .main p{
 	padding: 0.5em 11%;
 }
 .summary{
-	color:  #F8AFB7;	
+	color:  #F8AFB7;
 	text-align: center;
 	font-size: 1.3em;
 }
@@ -123,7 +123,7 @@ header h1, header h2{					/* Titre caché */
 	padding: 0.7em 11%;
 }
 /*
-.preamble p, .main p, .participation p, .benefits p, .requirements p, .explanation p{  /*  Paragraphe 
+.preamble p, .main p, .participation p, .benefits p, .requirements p, .explanation p{  /*  Paragraphe
 	background-color: #1B1612;
 	opacity: 0.71;
 	padding: 3px 5px;
@@ -139,7 +139,7 @@ header h1, header h2{					/* Titre caché */
 	border-radius: 10px;
 	padding: 3px 5px;
 	width: 13%;
-	font-size: 1.2em;	
+	font-size: 1.2em;
 	padding: 10px 18px;
     margin: 21px 390px ;
 }*//*
@@ -159,7 +159,7 @@ aside{
 }
 .design-selection, .zen-resources{				/* ARCHIVES RESSOURCES */
 	background-color: rgba(208,147,154, 0.9);
-	font-weight: bold;		
+	font-weight: bold;
 }
 .wrapper li{
 	padding: 0.5em 0;
@@ -200,7 +200,7 @@ aside{
 	font-weight: bold;
 	opacity: 0.9;
 
-}	
+}
 .sidebar h3{
 	font-size: 1.2em;
 	padding: 1em 13%;
@@ -221,22 +221,33 @@ a{
 .main a:hover{
 	font-weight: bold;
 }
-.sidebar a:hover:before{
+.design-selection a:hover:before{
 	content: "| ";
-	font-weight: bolder;
+	font-weight: bold;
 	color: white;
-	margin-left: -7%;
+	margin-left: -2.9%;
 }
-.design-name nav a:hover,
-.design-selection nav a:hover{
-	margin-left: 0.75em;
+.design-archives a:hover:before{
+	content: "| ";
+	font-weight: bold;
+	color: white;
+	margin-left: -6.9%;
+}
+.zen-resources a:hover:before{
+	content: "| ";
+	font-weight: bold;
+	color: white;
+	margin-left: -6%;
+}
+.designer-name:hover:before{
+	content: unset;
 }
 footer a:hover{
 	-moz-transform:  scale(1.3);
 	-webkit-transform:  scale(1.3);
 	-o-transform:  scale(1.3);
 	-ms-transform:  scale(1.3);
-	 transform:  scale(1.3);	
+	 transform:  scale(1.3);
 }
 
 li{
@@ -248,7 +259,7 @@ footer a{
 	margin: 1.3em 1%;
 }
 footer{                              /* BARRE NAV language + position */
-	background-color: rgba(255,205,147,0.4);	
+	background-color: rgba(255,205,147,0.4);
 	border-radius: 63px;
 	width: 3.7em;
 	padding: 0.5em;
@@ -257,8 +268,8 @@ footer{                              /* BARRE NAV language + position */
 	left: 3.5%;
 }
 footer .zen-accessibility{
-	width: 8px;
-	height: 8px;
+	width: 7px;
+	height: 7px;
 	color: black;
 }
 .zen-validate-html:hover, .zen-accessibility:hover, .zen-validate-css:hover, .zen-license:hover, .zen-github:hover{
@@ -329,7 +340,7 @@ footer .zen-accessibility{
 		display: inline-block;
 	}
 	.sidebar{
-		margin-left: 1.6%;
+		margin-left: 2.9%;
 		width: 81.3%;
 	}
 	.zen-resources,.design-selection, .design-archives{
@@ -375,8 +386,18 @@ footer .zen-accessibility{
 	}
 
 }
-@media (max-width: 800px) {
-	
+@media (max-width: 967px) {
+	.sidebar{
+		margin-left: 2.2%;
+	}
+}
+@media (max-width: 815px) {
+	.sidebar{
+		margin-left: 0.5%;
+	}
+}
+@media (max-width: 805px) {
+
 	.intro, .main{
 		margin: 0 6em;
 		width: 85%;
@@ -389,10 +410,14 @@ footer .zen-accessibility{
 		right: 63%;
 	}
 	.sidebar{
-		width: 98%;
+		width: 99%;
 	}
 
 
+}
+@media (max-width: 617px) {
+	.sidebar {
+  margin-left: 1.3%;
 }
 
 
@@ -401,8 +426,12 @@ footer .zen-accessibility{
     content: "  ";
     display: block;
 }
-	
-	
+@media (max-width: 465px) {
+	.sidebar {
+  margin-left: 2.2%;
+}
+
+
 
 
 }
